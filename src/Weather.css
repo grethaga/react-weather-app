@@ -27,7 +27,6 @@
 
 .Weather .icon {
   font-size: 54px;
-  margin-bottom: 20px;
 }
 
 .Weather .unit {
@@ -35,7 +34,7 @@
   display: inline-block;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 16px;
+  margin-top: 22px;
   padding-left: 4px;
   vertical-align: top;
 }
@@ -45,4 +44,5 @@
   color: #202124;
   font-size: 58px;
   font-weight: 400;
+  vertical-align: middle;
 }
