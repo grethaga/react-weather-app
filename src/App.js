@@ -11,11 +11,16 @@ export default function App() {
           <a
             href="https://github.com/grethaga/react-weather-app"
             target="_blank"
+            rel="noreferrer"
           >
             open-sourced on Github
           </a>{" "}
           and hosted on{" "}
-          <a href="https://shecodes-react-prjct.netlify.app" target="_blank">
+          <a
+            href="https://shecodes-react-prjct.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
             Netlify
           </a>{" "}
         </footer>
