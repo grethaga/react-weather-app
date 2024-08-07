@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./Weather.css";
 import Search from "./Search";
 import axios from "axios";
+import Date from "./Date";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       temperature: Math.round(response.data.temperature.current),
       wind: response.data.wind.speed,
@@ -15,7 +15,7 @@ export default function Weather(props) {
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
       icon: response.data.condition.icon_url,
-      date: "Friday 10:00",
+      date: new Date(response.data.time * 1000),
       ready: true,
     });
   }
@@ -26,7 +26,9 @@ export default function Weather(props) {
         <Search />
         <h1>{weatherData.city}</h1>
         <ul>
-          <li>{weatherData.date}</li>
+          <li>
+            <Date date={weatherData.date} />
+          </li>
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row">
