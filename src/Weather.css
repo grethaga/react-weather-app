@@ -8,6 +8,10 @@
   margin-bottom: 20px;
 }
 
+.Weather .info {
+  margin-bottom: 20px;
+}
+
 .Weather h1 {
   color: #202124;
   font-size: 28px;
@@ -34,7 +38,7 @@
   display: inline-block;
   font-size: 16px;
   line-height: 24px;
-  margin-top: 22px;
+  margin-top: 16px;
   padding-left: 4px;
   vertical-align: top;
 }
@@ -45,4 +49,8 @@
   font-size: 58px;
   font-weight: 400;
   vertical-align: middle;
+}
+
+.Weather .hum-wind {
+  margin-top: 16px;
 }
