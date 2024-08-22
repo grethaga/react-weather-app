@@ -8,5 +8,13 @@
 }
 
 .forecast-icon {
-  font-size: 20px !important;
+  width: 50px;
+}
+
+.forecast-day {
+  font-size: 14px;
+}
+
+.forecast-temp {
+  font-size: 14px;
 }
